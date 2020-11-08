@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 
 // set the server routes:
 app.use('/', mainRoutes);
-app.use('/passs', passRoutes);
+app.use('/pass', passRoutes);
 
 // turn on the server:
 app.listen(app.get('port'), () => {
