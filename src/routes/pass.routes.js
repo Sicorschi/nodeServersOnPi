@@ -1,10 +1,8 @@
 const express = require('express');
+const { getAllpasswords } = require('../controllers/pass.controller');
+
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json({
-    message: 'Request received'
-  });
-});
+router.get('/', getAllpasswords);
 
 module.exports = router;
