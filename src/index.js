@@ -21,7 +21,7 @@ app.use('/passs', passRoutes);
 
 // turn on the server:
 app.listen(app.get('port'), () => {
-  db.authenticate().then(() => {
+  db.sync({ force: true }).then(() => {
     console.log('DB succesfully connected!!');
   }).catch(err => {
     console.log(`Error connecting the DB: ${err.message}`);

@@ -1,8 +1,8 @@
 const express = require('express');
-const { getAllpasswords } = require('../controllers/pass.controller');
+const { getAllPasswords } = require('../controllers/pass.controller');
 
 const router = express.Router();
 
-router.get('/', getAllpasswords);
+router.get('/', getAllPasswords);
 
 module.exports = router;

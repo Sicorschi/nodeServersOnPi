@@ -1,7 +1,7 @@
 const dbConfig = {
   database: 'sequelizeMysql',
   username: 'igor',
-  password: 'sicorschi',
+  password: 'S1corsch1@',
   host: 'localhost',
   dialect: 'mysql'
 };

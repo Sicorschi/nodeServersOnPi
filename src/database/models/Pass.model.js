@@ -4,6 +4,7 @@ const sequelize = require('../db');
 const Pass = sequelize.define('pass', {
   id: {
     type: DataTypes.INTEGER,
+    primaryKey: true,
     autoIncrement: true,
     allowNull: false
   }, 
