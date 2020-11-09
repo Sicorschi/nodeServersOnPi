@@ -11,6 +11,27 @@ async function getAllUsers(req, res) {
   });
 }
 
+async function addNewUserAndShow(req, res) {
+    User.findAll().then(records => {
+      res.json(records);
+    }).catch(err => {
+      res.json({
+        message: `Error getting all passwords: ${err.message}`
+      });
+    });
+  }
+
 module.exports = {
-  getAllUsers
+  getAllUsers,
+  addNewUserAndShow
 }
+
+const Users = [
+    {
+        id: 2,
+        name: '',
+        username: '',
+        passwords: '',
+        description: ''
+    }
+];
