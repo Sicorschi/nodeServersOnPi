@@ -1,5 +1,5 @@
 const dbConfig = {
-  database: 'sequelizeMysql',
+  database: 'azeroHubV1',
   username: 'igor',
   password: 'S1corsch1@',
   host: 'localhost',

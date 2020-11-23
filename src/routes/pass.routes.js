@@ -1,9 +1,9 @@
 const express = require('express');
-const { getAllPasswords, addNewPass, deletePass, updatePass, getPass } = require('../controllers/pass.controller');
+const { getAllPass, addNewPass, deletePass, updatePass, getPass } = require('../controllers/pass.controller');
 
 const router = express.Router();
 
-router.get('/', getAllPasswords);
+router.get('/', getAllPass);
 router.post('/add', addNewPass);
 router.delete('/delete/:id', deletePass);
 router.post('/update/:id', updatePass);

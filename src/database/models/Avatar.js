@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../db');
 
-const User = sequelize.define('user', {
+const Avatar = sequelize.define('avatar', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -12,20 +12,20 @@ const User = sequelize.define('user', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  userName: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
   password: {
     type: DataTypes.STRING,
     allowNull: false
   },
   description: {
     type: DataTypes.TEXT,
-    allowNull: true
+    allowNull: false
+  },
+  imgUrl: {
+    type: DataTypes.STRING,
+    allowNull: false
   }
 }, {
     timestamps: false
 });
 
-module.exports = User;
+module.exports = Avatar;
